@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="w3.css">
+  
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(229, 23%, 9%); }
+    *{
+      outline: none;
+      font-family: 'Poppins', sans-serif;
+    }
+    body{
+      font-family: 'Poppins', sans-serif;
+    }
+    .nav-desktop{
+      display: none;
+    }
+    .margin-60{
+      margin-left: 16px;
+      margin-right:16px 
+    }
+    .margin-left-60{
+      margin-left: 16px;}
+       a{
+        text-decoration: none
+      }
+    
+    @media screen and (min-width:500px) {
+      
+      
+    .burger, .bar{
+      display: none;
+    }  
+    .nav-desktop{
+      display: inline;
+    }
+
+    .get-start{
+      float: left;
+    }
+      
+    .margin-60{
+      margin-left: 60px;
+      margin-right:60px 
+    }
+    .margin-top,{
+      margin-top: 10px
+    }
+    .margin-left{
+      margin-left: 16px
+    }
+    .margin-left-60{
+      margin-left: 60px;}
+      .circle-left{
+        left: -27%
+      } 
+      h1{
+        float:left;
+      }
+      .sidenav a{
+        text-decoration: none;
+        padding-left: 10px
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="w3-margin-top margin-60"><img src="images/logo.svg" alt="logo" class=" margin-top"> 
+  <span class="nav-desktop sidenav" >
+  <span><a href="#" class=" margin-top  w3-hover-blue">Features</a> </span>
+    
+    <span><a href="#" class=" margin-top w3-hover-blue">Pricing</a></span>
+    <span><a href="#" class="margin-top  w3-hover-blue">Resources</a></span>
+
+    <span class="login-signup w3-right margin-top">
+    <a href="#"  role="button" class="w3-blue w3-padding w3-round-xlarge">Login</a>
+    <a href="#" role="button" class="w3-blue w3-padding w3-round-xlarge">Sign Up</a></span>
+  </span>
+
+  <span style="float: right" class="w3-large "><button onclick="w3_open()" class="w3-open burger">&#9776</span></button>
+</div>
+
+
+
+
+<div class=" bar w3-container w3-border w3-text-white w3-round-large  w3-center w3-margin" style="width; background: hsl(257, 27%, 26%) ">
+    <div class="w3-sidenav side-nav" style="display:none"> <a href="javascript:void(0 
+    )" onclick="w3_close()" class="w3- w3-xlarge" > &times</a>
+     <div class="w3-margin"><a href="#">Features  </a></div>
+      <div class="w3-margin"><a href="#">Pricing </a></div>
+      <div class="w3-margin"><a href="#">Resources </a></div>
+      <hr>
+      <div class="w3-margin"><a href="#" role="button" class="w3-blue w3-border w3-round-xlarge w3-padding-small">Login </a></div>
+      <div class="w3-margin"><a href="#" role="button" class="w3-blue w3-round-large w3-padding-small">Sign Up </a></div>
+    </div></div>
+
+    
+<div class="w3-row">
+  <div class="w3-col s12 m6 w3-right">
+  <div><img src="/images/illustration-working.svg" alt="" class="w3-mobile w3-padding" ></div>
+  </div>
+  <br>
+  <br>
+
+  
+
+
+  <div class="w3-col s12 m6 w3-left ">
+  <h1 class="margin-left-60 " ><b> More than just shorter links</b></h1>
+
+ <div> <p class="margin-left-60 w3-left w3-margin-right"> Build your brand’s recognition and get detailed insights 
+  on how your links are performing.</p></div>
+ <div class="w3-center">
+  <button class="margin-left-60 get-start w3-round-xlarge w3-text-white  w3-large w3-center " style="background: hsl(180, 66%, 49%)">Get Started</button></div>
+</div>
+</div>
+</div>
+  <br>
+  <br>
+  <div 
+  style="background: hsla(254, 7%, 63%, 0.267)">
+  <div class="w3-container w3-row get-started  margin-60  w3-padding " style="background: hsl(257, 27%, 26%)" >
+    <div class="w3-col s12 m9  " >
+   <input type="text" placeholder="Shorten a link here" style="padding: 0 12px; margin-bottom:10px;width: 100%;" class="w3-mobile"></div>
+   <div class="w3-col s12 m3 "></div>
+  <button class="w3-mobile w3-round margin-left " style="background: hsl(180, 66%, 49%)"> Shorten It!</button></span>
+  </div>
+
+ <div class="w3-row  w3-center margin-60 "> <h2 >Advanced Statistics</h2></div>
+  
+  <p class="margin-60 w3-center"> Track how your links are performing across the web with our 
+  advanced statistics dashboard.</p>
+
+  
+
+
+<div class="w3-row margin-60">
+  <div class="w3-col m4 s12">
+    <div class="w3-container w3-card-4  w3-card-4 w3-margin w3-border">
+    <div class="w3-center"> <img src="/images/icon-brand-recognition.svg" alt=" brand recognition" class="w3-circle circle-left w3-padding " style="position:relative; top:-25px; background: hsl(257, 27%, 26%)"></div>
+      <h4 class="w3-center"> <b>Brand Recognition</b> </h4>
+    Boost your brand recognition with each click. Generic links don’t 
+    mean a thing. Branded links help instil confidence in your content.</div>
+
+  </div>  
+    <br>
+
+  <div class="w3-col m4 s12">
+    <div class="w3-container w3-card-4 w3-margin w3-border ">
+      <div class="w3-center"> <img src="/images/icon-detailed-records.svg" alt=" detailed Records" class="w3-circle w3-padding circle-left " style="position:relative; top:-25px ; background: hsl(257, 27%, 26%)"></div>
+       <h4 class="w3-center"> <b>Detailed Records</b> </h4>
+    Gain insights into who is clicking your links. Knowing when and where 
+    people engage with your content helps inform better decisions.
+    </div>
+  </div>
+    <br>
+  <div class="w3-col s12 m4">
+    <div class="w3-container w3-card-4 w3-margin w3-border">
+    <div class="w3-center"> <img src="/images/icon-fully-customizable.svg" alt=" detailed Records" class="w3-circle w3-padding circle-left" style="position:relative; top:-25px ; background: hsl(257, 27%, 26%)"></div>
+     <h4 class="w3-center"> <b>Fully Customizable</b> </h4>
+    Improve brand awareness and content discoverability through customizable 
+    links, supercharging audience engagement.
+    </div>
+  </div>
+    <br>
+    <br>
+</div>
+<br>
+</div>
+<div class="w3-container   w3-center w3-padding w3-purpl " style="background: url(images/bg-boost-desktop.svg),no-repeat; background-color: hsl(257, 27%, 26%)">
+  
+  
+  
+  <h3 class=" ">Boost your links today</h3>
+
+ <button class="w3-round-xlarge " style="background: hsl(180, 66%, 49%)"> Get Started </button>
+ <br>
+ <br>
+</div>
+
+    <div class=" w3-row  w3-center w3-text-white" style=" background: hsl(255, 38%, 8%); ">
+  
+      <div class="w3-col s12 m4 w3-center ">
+    <h2 class="">Shortly</h2></div>
+    
+  <div class="w3-col s12 m5">
+    <div class="w3-col m4 w3-margi w3-small">
+    <h3> <a href="#"> Features</a></h3>
+    <p> <a href="#"> Shortening</a></p>
+    <p > <a href="#"></a>Branded Links</a></p>
+    <p > <a href="#">Analytics</a></p></div>
+
+
+    <div class="w3-col m4  w3-small">
+   <h3>Resources</h3>
+    <p > <a href="#">Blog</a></p>
+    <p > <a href="#">Developers</a></p>
+    <p > <a href="#"> Support</a></p>
+    </div>
+
+    <div class="w3-col m4  w3-small">
+    <h3> Company</h3>
+<div><p > <a href="#"> About</a></p>
+ <p > <a href="#"> Our Team</a></p>
+ <p > <a href="#"> Careers</a></p>
+  <p > <a href="#">Contact</a></p>
+    </div>
+  </div>
+</div>
+<div class="w3-col m3 ">
+<div class="w3-margin"><a href="#"><img src="images/icon-facebook.svg" alt="icon-facebook" class="w3-padding "></a><span><a href="#"><img src="images/icon-twitter.svg" alt="icon-twitter" class="w3-padding "></a></span><span><a href="#"><img src="images/icon-pinterest.svg" alt="icon-pinterest" class="w3-padding "></a></span><span><a href="#"><img src="images/icon-instagram.svg" alt="icon-instagram" class="w3-padding "></a></span></div>
+
+</div>
+<br>
+<br>
+</div>
+
+<div class="attribution w3-center sidenav  w3-text-white" style=" background: hsl(255, 38%, 8%); padding-top: 30px">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="w3-text-white">Frontend Mentor</a>. 
+    Coded by <a href="#" class="w3-text-white">AZEEZ QUADRI (QUADRANO)</a>.
+  </div>
+<BR></BR>
+  
+  <script>
+    function w3_open() {
+  document.getElementsByClassName("w3-sidenav")[0].style.display="block"
+  }
+  function w3_close(){
+  document.getElementsByClassName("w3-sidenav")[0].style.display="none"
+  }
+  </script>
+</body>
+</html>
